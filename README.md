@@ -2,6 +2,9 @@
 
 ReqRes is a minimalistic mini project that serves as a front-end application for interacting with the [Reqres API](https://reqres.in/). This project showcases how to use the API to manage user data and demonstrate front-end skills using React, Flowbite, Tailwind CSS, and Axios.
 
+## Demo App
+https://reqres-minpro.netlify.app/
+
 ## Features
 
 - Fetch and display user data from the Reqres API.
