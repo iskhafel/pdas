@@ -29,11 +29,9 @@ export default function LoginPage() {
       })
       .then((response) => {
         const token = response.data.token;
-        console.log("Token received:", token);
+        localStorage.setItem("access_token", token);
 
-        localStorage.setItem("token", token);
-
-        navigate("/list-users");
+        navigate("/home");
       })
       .catch((error) => {
         setNotification("Invalid email or password");
