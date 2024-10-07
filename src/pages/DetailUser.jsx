@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { useParams } from "react-router-dom";
-import { Card, Spinner } from "flowbite-react"; // Import Spinner for loading state
+import { useParams, useNavigate } from "react-router-dom";
+import { Card, Spinner, Button } from "flowbite-react";
 
 export default function DetailUser() {
   const { userId } = useParams();
   const [user, setUser] = useState(null);
-  const [loading, setLoading] = useState(true); // Loading state
+  const [loading, setLoading] = useState(true);
+  const navigate = useNavigate();
 
   useEffect(() => {
     axios
@@ -47,6 +48,7 @@ export default function DetailUser() {
         </h2>
         <p className="text-center">{user.email}</p>
         <p className="text-center">ID: {user.id}</p>
+        <Button onClick={() => navigate("/list-users")}>Back</Button>
       </Card>
     </div>
   );
