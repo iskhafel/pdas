@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { Navigate, Outlet } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 
 export default function ProtectedRoute({ children }) {
   const token = localStorage.getItem("access_token");
@@ -9,9 +9,5 @@ export default function ProtectedRoute({ children }) {
   }
 
   // kalau token ada
-  return (
-    <>
-      <Outlet /> || {children}
-    </>
-  );
+  return <>{children}</>;
 }
