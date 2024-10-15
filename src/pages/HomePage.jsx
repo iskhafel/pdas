@@ -5,80 +5,85 @@ export default function HomePage() {
     <>
       <Header />
 
-      <section className="bg-slate-800">
+      <section className="bg-gray-900">
         <div className="container mx-auto px-6 py-12 flex flex-col items-center justify-center">
           <div className="text-center mb-12">
-            <h1 className="text-5xl font-extrabold text-white animate-pulse">
-              ReqRes Minpro
+            <h1 className="text-5xl font-extrabold text-teal-400 animate-pulse">
+              ReqRes API
             </h1>
-            <p className="mt-4 text-lg text-white max-w-md mx-auto">
-              Discover our amazing trivia app that will challenge your knowledge
-              and help you grow. Are you ready for the quiz?
+            <p className="mt-4 text-lg text-teal-200 max-w-md mx-auto">
+              Explore a powerful API designed for developers to test frontend
+              and backend interactions effortlessly. Start your journey with
+              mock data today.
             </p>
           </div>
-          {/* Decorative Cards */}
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white shadow-lg rounded-lg p-6 text-center transform hover:scale-105 transition duration-300">
-              <h3 className="text-xl font-bold">Fast & Fun</h3>
+              <h3 className="text-xl font-bold text-gray-900">Mock API</h3>
               <p className="mt-2 text-gray-700">
-                Quick trivia challenges that are both entertaining and
-                educational.
+                Use pre-defined user data for testing and development without
+                setting up a backend.
               </p>
             </div>
             <div className="bg-white shadow-lg rounded-lg p-6 text-center transform hover:scale-105 transition duration-300">
-              <h3 className="text-xl font-bold">Real-Time Scores</h3>
+              <h3 className="text-xl font-bold text-gray-900">
+                Seamless Integration
+              </h3>
               <p className="mt-2 text-gray-700">
-                Track your progress and compare with friends in real-time.
+                Integrate ReqRes API with your frontend projects in no time and
+                simulate real-world scenarios.
               </p>
             </div>
             <div className="bg-white shadow-lg rounded-lg p-6 text-center transform hover:scale-105 transition duration-300">
-              <h3 className="text-xl font-bold">Various Topics</h3>
+              <h3 className="text-xl font-bold text-gray-900">
+                Realistic Responses
+              </h3>
               <p className="mt-2 text-gray-700">
-                Choose from a wide range of topics to match your interests.
+                Get structured, realistic responses in JSON format to ensure
+                smooth testing.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Features Section */}
       <section className="bg-gray-100 py-12">
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-800">
-              Why Choose ReqRes?
+              Why Use ReqRes API?
             </h2>
             <p className="mt-4 text-gray-600">
-              We offer engaging quizzes, real-time score tracking, and endless
-              learning opportunities.
+              Simplify your development process with our mock API tailored for
+              testing, learning, and prototyping.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white shadow-lg rounded-lg p-6 text-center">
               <h3 className="text-xl font-semibold text-gray-800">
-                Engaging Quizzes
+                Mock Data for Testing
               </h3>
               <p className="mt-4 text-gray-600">
-                Our quizzes are designed to keep you hooked with dynamic
-                questions and a fun learning experience.
+                Utilize our user data and resources for realistic test
+                environments.
               </p>
             </div>
             <div className="bg-white shadow-lg rounded-lg p-6 text-center">
               <h3 className="text-xl font-semibold text-gray-800">
-                Interactive UI
+                Easy Prototyping
               </h3>
               <p className="mt-4 text-gray-600">
-                Enjoy a sleek, responsive design that looks great on all
-                devices.
+                Build your app prototypes with ready-to-use API calls.
               </p>
             </div>
             <div className="bg-white shadow-lg rounded-lg p-6 text-center">
               <h3 className="text-xl font-semibold text-gray-800">
-                Learn & Compete
+                Developer Friendly
               </h3>
               <p className="mt-4 text-gray-600">
-                Challenge yourself and compete with friends to see who knows the
-                most.
+                Access detailed documentation and examples to streamline your
+                API integration.
               </p>
             </div>
           </div>

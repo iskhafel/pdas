@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { Card, Button } from "flowbite-react";
+import { Card, Button, Breadcrumb } from "flowbite-react";
 import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -76,6 +76,10 @@ export default function ListUsers() {
     <>
       <Header />
       <div className="flex flex-col items-center justify-center min-h-screen bg-slate-800">
+        <Breadcrumb aria-label="breadcrumb" className="my-4">
+          <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+          <Breadcrumb.Item>Users</Breadcrumb.Item>
+        </Breadcrumb>
         <h1 className="text-3xl font-bold mb-4 text-white mt-4">
           List of Users
         </h1>

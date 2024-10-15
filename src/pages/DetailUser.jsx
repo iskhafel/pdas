@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams, useNavigate } from "react-router-dom";
-import { Card, Spinner, Button } from "flowbite-react";
+import { Card, Spinner, Button, Breadcrumb } from "flowbite-react";
 
 export default function DetailUser() {
   const { userId } = useParams();
@@ -40,6 +40,11 @@ export default function DetailUser() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-slate-800">
+      <Breadcrumb aria-label="breadcrumb" className="my-4 text-3xl">
+        <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+        <Breadcrumb.Item href="/list-users">Users</Breadcrumb.Item>
+        <Breadcrumb.Item>Detail</Breadcrumb.Item>
+      </Breadcrumb>
       <h1 className="text-3xl font-bold mb-4 text-white">Detail of User</h1>
       <Card className="max-w-sm w-full mx-auto">
         <img src={user.avatar} alt={user.first_name} className="mx-auto" />
