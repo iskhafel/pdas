@@ -20,7 +20,7 @@ export default function Header() {
             alt="Flowbite Logo"
           />
           <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-            React App
+            Reqres API
           </span>
         </Navbar.Brand>
 
